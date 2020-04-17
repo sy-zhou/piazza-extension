@@ -20,7 +20,8 @@
   "name": "Piazza",
   "permissions": [
     "activeTab",
-    "contextMenus"
+    "contextMenus",
+    "storage"
   ],
   "version": "1.0.0",
   "web_accessible_resources": [
