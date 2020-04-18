@@ -7,7 +7,16 @@
   "content_scripts": [
     {
       "js": [
-        "init.js"
+        "js/jquery.js"
+      ],
+      "matches": [
+        "*://piazza.com/class/*"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "js": [
+        "js/init.js"
       ],
       "matches": [
         "*://piazza.com/class/*"
@@ -20,12 +29,11 @@
   "name": "Piazza",
   "permissions": [
     "activeTab",
-    "contextMenus",
     "storage"
   ],
   "version": "1.0.0",
   "web_accessible_resources": [
-    "init.js",
+    "js/*",
     "base.css"
   ]
 }
