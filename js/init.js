@@ -32,3 +32,33 @@ pageFeed.addEventListener('mousedown', (e) => {
 document.addEventListener("mouseup", function(){
   document.removeEventListener("mousemove", resize, false);
 });
+
+// move new post button to top bar
+
+// $('#bars').prepend( $('#new_post_button') );
+$('#feed').append( $('#new_post_button') );
+
+// move filters to top bar and hide some of them
+$('#page_feed_filter_buttons').insertBefore( $('#popular_tags_list') );
+$('#popular_tags_bar').children('ul').eq(0).hide();
+$('#popular_tags_bar').children('span').eq(0).hide();
+$('#popular_tags_bar').children('span').eq(1).hide();
+$('#shortcut_due').hide();
+$('#shortcut_hidden').hide();
+$('#shortcut_hide_group_posts').hide();
+
+$('.page_feed_search_wrapper').insertAfter( $('.hide_show_feed.hide_feed') );
+$('.feed_options_arrow').hide();
+
+// adjust page feed 'top' height so as to not cover bar that appears when filters are on
+$('#page_feed_filter_buttons').children().addClass('manual_filter');
+$('#popular_tags_list').children().addClass('manual_filter');
+
+$('.manual_filter').on('click', function() {
+  $('#question_feed_questions').addClass('question_feed_questions_contract');
+});
+
+// re-establish height when filter is closed
+$('.clear_filter').on('click', function() {
+  $('#question_feed_questions').removeClass('question_feed_questions_contract');
+});
