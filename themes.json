@@ -1,0 +1,30 @@
+{
+  "default": {
+    "--main-color": "#3575a8",
+    "--light-color": "#d2e8f1"
+  },
+  "teal": {
+    "--main-color": "#155207",
+    "--light-color": "#d2e8f1"
+  },
+  "purple": {
+    "--main-color": "#3d0079",
+    "--light-color": "#d2e8f1"
+  },
+  "grey": {
+    "--main-color": "#4d4d4d",
+    "--light-color": "#d2e8f1"
+  },
+  "orange": {
+    "--main-color": "#c59101",
+    "--light-color": "#d2e8f1"
+  },
+  "green": {
+    "--main-color": "#44b421",
+    "--light-color": "#d2e8f1"
+  },
+  "aqua": {
+    "--main-color": "#53bce8",
+    "--light-color": "#d2e8f1"
+  }
+}

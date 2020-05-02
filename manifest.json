@@ -34,6 +34,7 @@
   "version": "1.0.0",
   "web_accessible_resources": [
     "js/*",
-    "base.css"
+    "base.css",
+    "themes.json"
   ]
 }
