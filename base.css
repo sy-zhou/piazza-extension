@@ -1,6 +1,7 @@
 :root {
   --light-gray: #f9fbfe;
   --main-color: #3575a8;
+  --text-highlight-color: #448ab6;
   --light-color: #d2e8f1;
   --bucket-header-color: #e5f3ff;
   --bucket-header-color-focus: #daecff;
@@ -66,7 +67,7 @@
   margin-left: 8px !important;
 }
 #popular_tags_bar .tag:focus, #popular_tags_bar .tag:hover, #popular_tags_bar .tag:active {
-  color: #448ab6;
+  color: var(--text-highlight-color);
   background: var(--light-color);
 }
 #popular_tags_bar .tag {
@@ -188,10 +189,7 @@
 /* Post area on right */
 
 .post_region_box {
-  border-radius: 0 !important;
-  -webkit-border-radius: 0 !important;
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
+  box-shadow: 0 0 3px #dadada;
   margin: 15px;
 }
 /* .post_region_box .post_region_header .post_title {
@@ -209,6 +207,7 @@
   padding: 8px 15px 12px 15px;
   background: none;
   border: none;
+  line-height: inherit;
 }
 .post_region_box .post_region_header {
   padding: 15px 15px 5px 15px;
@@ -223,6 +222,24 @@
 }
 .post_region_box .post_region_content h1 {
   font-weight: bold;
+}
+
+.post_vote_block {
+  display: inline-block;
+  padding: 3px 5px;
+  background: #f2f2f3;
+  border-radius: 2px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.vote_instructor {
+  margin: 0;
+}
+.post_info_edit_block {
+  float: right;
+}
+.post_region_box .post_region_actions .post_action {
+  margin-top: 0;
 }
 
 #question_history_slider_wrapper {

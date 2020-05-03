@@ -1,30 +1,47 @@
 {
   "default": {
     "--main-color": "#3575a8",
-    "--light-color": "#d2e8f1"
+    "--text-highlight-color": "#4e7942",
+    "--light-color": "#d2e8f1",
+    "--bucket-header-color": "#e5f3ff",
+    "--bucket-header-color-focus": "#daecff"
   },
   "teal": {
     "--main-color": "#155207",
-    "--light-color": "#d2e8f1"
+    "--text-highlight-color": "#4e7942",
+    "--light-color": "#ddf5e3",
+    "--bucket-header-color": "#eff9f0",
+    "--bucket-header-color-focus": "#d7f1dd"
   },
   "purple": {
     "--main-color": "#3d0079",
-    "--light-color": "#d2e8f1"
+    "--text-highlight-color": "#523d82",
+    "--light-color": "#eadbf5",
+    "--bucket-header-color": "#f8f1ff",
+    "--bucket-header-color-focus": "#f1e6fd"
   },
   "grey": {
     "--main-color": "#4d4d4d",
-    "--light-color": "#d2e8f1"
+    "--light-color": "#d2e8f1",
+    "--bucket-header-color": "#e5f3ff",
+    "--bucket-header-color-focus": "#daecff"
   },
   "orange": {
     "--main-color": "#c59101",
-    "--light-color": "#d2e8f1"
+    "--light-color": "#d2e8f1",
+    "--bucket-header-color": "#e5f3ff",
+    "--bucket-header-color-focus": "#daecff"
   },
   "green": {
     "--main-color": "#44b421",
-    "--light-color": "#d2e8f1"
+    "--light-color": "#d2e8f1",
+    "--bucket-header-color": "#e5f3ff",
+    "--bucket-header-color-focus": "#daecff"
   },
   "aqua": {
     "--main-color": "#53bce8",
-    "--light-color": "#d2e8f1"
+    "--light-color": "#d2e8f1",
+    "--bucket-header-color": "#e5f3ff",
+    "--bucket-header-color-focus": "#daecff"
   }
 }

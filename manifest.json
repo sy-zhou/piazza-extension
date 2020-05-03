@@ -1,5 +1,8 @@
 {
   "author": "Sally Zhou",
+  "background": {
+    "scripts":["js/background.js"]
+  },
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": "pizza-icon.png"
@@ -21,7 +24,7 @@
       "matches": [
         "*://piazza.com/class/*"
       ],
-      "run_at": "document_end"
+      "run_at": "document_idle"
     }
   ],
   "description": "Modifies Piazza's default styling to create a cleaner interface",
@@ -29,7 +32,8 @@
   "name": "Piazza",
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs"
   ],
   "version": "1.0.0",
   "web_accessible_resources": [
